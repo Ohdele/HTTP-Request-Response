@@ -1,0 +1,27 @@
+Create a simple Node.js server to handle the HTTP request and send a response.
+
+server.js:
+
+
+// server.js
+
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+
+app.post('/submit', (req, res) => {
+    const { username, email } = req.body;
+
+    // Process the data (for example, save it to a database)
+    // For now, we'll just send a response back with the received data
+
+    res.json({ message: `Received data: Username - ${username}, Email - ${email}` });
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
