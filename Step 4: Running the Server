@@ -1,0 +1,33 @@
+Install Node.js and Express:
+
+Make sure you have Node.js installed. If not, download and install it from Node.js official website.
+In your project directory, run the following commands to install Express and body-parser:
+bash
+Copy code
+npm init -y
+npm install express body-parser
+Start the Server:
+
+In your project directory, run:
+bash
+Copy code
+node server.js
+Open the HTML File:
+
+Open index.html in your web browser.
+Submit the Form:
+
+Fill out the form and submit it. You should see the response displayed on the page.
+Explanation
+HTML Form:
+
+A simple form with username and email fields. When the form is submitted, it prevents the default form submission and uses JavaScript to send the data.
+JavaScript (main.js):
+
+Listens for the form submission event, gathers the form data, and sends it to the server using the Fetch API.
+Displays the response message on the page.
+Node.js Server:
+
+Uses Express to create a simple server that listens for POST requests on the /submit endpoint.
+Parses the JSON request body and sends a JSON response with the received data.
+This hands-on lab demonstrates the basics of making HTTP requests and handling responses using HTML, JavaScript, and a Node.js server. You can extend this lab by adding more features, such as form validation, error handling, and connecting to a database.
