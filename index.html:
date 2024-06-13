@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Request Response Lab</title>
+</head>
+<body>
+    <h1>HTTP Request Response Lab</h1>
+    <form id="dataForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+In this lab, you will:
+
+Create a basic HTML form to submit data.
+Use JavaScript to make an HTTP request to a server.
+Set up a simple Node.js server to handle the request and send a response.
+Step 1: Setup HTML Form
+Create an HTML file with a form to collect user input.
+
+
+
